@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <a href="index.html">Back to Home</a> <h2>Student Advising Form</h2>
+    <h4>Please fill out the details below:</h4>
+
+    <form>
+        <p>Name: <input type="text" name="username" required></p>
+        <p>Password: <input type="password" name="pw"></p>
+        
+        <p>Year:
+            <input type="radio" name="level" value="1"> Year 1
+            <input type="radio" name="level" value="2"> Year 2
+            <input type="radio" name="level" value="3"> Year 3
+            <input type="radio" name="level" value="4"> Year 4
+        </p>
+
+        <p>Major:
+            <input type="checkbox" name="major" value="MIS"> MIS
+            <input type="checkbox" name="major" value="MKGT"> MKGT
+            <input type="checkbox" name="major" value="MGMT"> MGMT
+            <input type="checkbox" name="major" value="FIN"> FIN
+        </p>
+
+        <p>Days Available:<br>
+            <select name="options" multiple>
+                <option value="1">Monday</option>
+                <option value="2">Tuesday</option>
+                <option value="3">Wednesday</option>
+                <option value="4">Thursday</option>
+                <option value="4">Friday</option>
+            </select>
+        </p>
+
+        <p>Date Requested: <input type="date" name="start" required></p> <input type="submit" value="Submit Request">
+    </form>
+</body>
+</html>
